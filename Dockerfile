@@ -1,4 +1,5 @@
 FROM mono:latest
+RUN apt-get install unzip
 WORKDIR /opt/terraria
 
 RUN curl -O https://terraria.org/api/download/pc-dedicated-server/terraria-server-1449.zip
