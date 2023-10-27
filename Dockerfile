@@ -7,4 +7,5 @@ RUN unzip terraria-server-1449.zip
 RUN rm terraria-server-1449.zip
 
 WORKDIR 1449/Linux
+RUN rm System*.dll* Mono*.dll* monoconfig mscorlib.dll
 ENTRYPOINT ["mono", "--server", "--gc=sgen", "-O=all", "TerrariaServer.exe"]
